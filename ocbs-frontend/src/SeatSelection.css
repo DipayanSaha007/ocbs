@@ -1,0 +1,81 @@
+/* src/components/SeatSelection.css */
+.seat-selection-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.seat-selection-title {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.seat-options {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  color: #555;
+}
+
+.seat-options label {
+  margin-right: 10px;
+}
+
+.seat-options select {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.seats {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.seat {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  transition: background-color 0.3s;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.seat.selected {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.seat:hover {
+  background-color: #e0e0e0;
+}
+
+.confirm-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #28a745;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.confirm-btn:hover {
+  background-color: #218838;
+}
+
+.confirm-btn:active {
+  transform: scale(0.98);
+}
